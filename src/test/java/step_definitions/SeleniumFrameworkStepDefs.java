@@ -2,17 +2,10 @@ package step_definitions;
 
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import org.openqa.selenium.WebDriver;
 
 import static org.junit.Assert.assertEquals;
 
-public class SeleniumFrameworkStepDefs {
-
-    private WebDriver webDriver;
-
-    public SeleniumFrameworkStepDefs() {
-        this.webDriver = Hooks.driver;
-    }
+public class SeleniumFrameworkStepDefs extends BaseStep {
 
     @When("^I open seleniumframework website$")
     public void i_open_selenium_website() {
